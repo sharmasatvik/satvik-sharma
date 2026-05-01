@@ -46,7 +46,6 @@
         -webkit-font-smoothing: antialiased;
       }
 
-      /* ── NAV ─────────────────────────── */
       nav {
         background: var(--slate-900);
         position: sticky;
@@ -103,7 +102,6 @@
         color: var(--white) !important;
       }
 
-      /* ── HERO ────────────────────────── */
       .hero {
         background: var(--slate-800);
         padding: 96px 48px 80px;
@@ -207,8 +205,6 @@
         color: var(--teal-soft);
         border-color: var(--teal-soft);
       }
-
-      /* HERO RIGHT - contact card */
       .hero-card {
         background: var(--slate-900);
         border-radius: 12px;
@@ -289,7 +285,6 @@
         }
       }
 
-      /* ── ABOUT / APPROACH SECTION ────── */
       .section {
         max-width: 1040px;
         margin: 0 auto;
@@ -327,7 +322,6 @@
         line-height: 1.2;
       }
 
-      /* APPROACH */
       .approach-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -380,7 +374,6 @@
         line-height: 1.75;
       }
 
-      /* ── EXPERIENCE ──────────────────── */
       .exp-wrap {
         background: var(--slate-900);
         padding: 72px 0;
@@ -494,14 +487,13 @@
         line-height: 1.7;
       }
       .tl-pts li::before {
-        content: "-";
+        content: "—";
         position: absolute;
         left: 0;
         color: var(--teal);
         font-size: 11px;
       }
 
-      /* ── SKILLS ──────────────────────── */
       .skills-section {
         background: var(--white);
         padding: 72px 0;
@@ -625,7 +617,6 @@
         border-radius: 4px;
       }
 
-      /* Contact strip */
       .contact-strip {
         margin-top: 24px;
         display: flex;
@@ -672,7 +663,6 @@
         color: var(--light);
       }
 
-      /* ── FOOTER ──────────────────────── */
       footer {
         background: var(--slate-900);
         border-top: 2px solid var(--teal);
@@ -708,7 +698,6 @@
         color: var(--teal-soft);
       }
 
-      /* ── REVEAL ──────────────────────── */
       .reveal {
         opacity: 0;
         transform: translateY(16px);
@@ -721,7 +710,6 @@
         transform: none;
       }
 
-      /* ── RESPONSIVE ──────────────────── */
       @media (max-width: 780px) {
         .hero-inner {
           grid-template-columns: 1fr;
@@ -761,7 +749,7 @@
     <!-- NAV -->
     <nav>
       <div class="nav-inner">
-        <div class="nav-name">Satvik Sharma</div>
+        <div class="nav-name">Satvik <em>Sharma</em></div>
         <div class="nav-links">
           <a href="#approach">Approach</a>
           <a href="#experience">Experience</a>
@@ -776,12 +764,14 @@
       <div class="hero-inner">
         <div>
           <div class="hero-eyebrow">Based in Gurugram, India</div>
-          <h1>Satvik<br /><em>Sharma.</em></h1>
+          <h1>Satvik<br />Sharma.</h1>
           <p class="hero-bio">
             I design and build
             <strong>scalable, distributed backend systems</strong>
             that teams can rely on in production - performant under load,
-            maintainable over time, and built to grow.
+            maintainable over time, and built to grow. My primary tool is Java.
+            My real interest is in getting the architecture right before writing
+            a line of code.
           </p>
           <div class="hero-actions">
             <a href="mailto:satvik3110@gmail.com" class="btn-fill"
@@ -1025,13 +1015,24 @@
               <span class="sk-tag">CSS</span>
             </div>
           </div>
-          <div class="sk-row reveal" style="grid-column: span 2">
+          <div class="sk-row reveal">
             <div class="sk-row-label">Practice</div>
             <div class="sk-row-tags">
               <span class="sk-tag">Agile / Scrum</span>
               <span class="sk-tag">Unit Testing</span>
               <span class="sk-tag">Spring Security</span>
               <span class="sk-tag">SDLC</span>
+            </div>
+          </div>
+          <div class="sk-row reveal">
+            <div class="sk-row-label">Prompt Eng.</div>
+            <div class="sk-row-tags">
+              <span class="sk-tag">Claude</span>
+              <span class="sk-tag">OpenAI</span>
+              <span class="sk-tag">Copilot</span>
+              <span class="sk-tag">Gemini</span>
+              <span class="sk-tag">Replit</span>
+              <span class="sk-tag">Perplexity</span>
             </div>
           </div>
         </div>
